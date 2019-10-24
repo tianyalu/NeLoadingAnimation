@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
 
     <com.sty.ne.loading.animation.LoadingView
+        android:id="@+id/loading_view"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         app:ball_color="@color/colorAccent"
+        app:ball_radius="10dp"
         app:line_color="@color/colorPrimary"
-        app:max_up="50dp"
-        app:max_down="70dp"
-        app:stroke_width="4dp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:line_width="240dp"
+        app:max_up="70dp"
+        app:max_down="50dp"
+        app:stroke_width="4dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
